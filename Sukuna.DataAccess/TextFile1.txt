@@ -1,0 +1,2 @@
+﻿Utiliser en faisant gérer les packages NuGet
+Copier la grosse partie itemGroup puis l coller dans sukuna.webApi
