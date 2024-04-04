@@ -11,9 +11,9 @@ public class UserService : IUserService
     {
         Users = new List<User>()
         {
-            new User() { Name="cfd", Password="book1"},
-            new User() { Name="cfd", Password="book2"},
-            new User() { Name="cfd", Password="book3"},
+            new User() { FirstName="cfd", Password="article1"},
+            new User() { FirstName="cfd", Password="article2"},
+            new User() { FirstName="cfd", Password="article3"},
         };
     }
     public string Add(UserResource userResource) // Les ressources sont les saisies utilisateurs
@@ -24,10 +24,10 @@ public class UserService : IUserService
             var user = new User()
             {
                 Id = userResource.Id,
-                Name = userResource.Name
+                FirstName = userResource.FirstName
             };
             Users.Add(user);
-            return user.Name;
+            return user.FirstName;
         }
         return "Already exist";
     }
@@ -42,17 +42,17 @@ public class UserService : IUserService
         var existUser = Users.Find(x => x.Id == userResource.Id);
         if (existUser != null)
         {
-            existUser.Name = userResource.Name;
-            return existUser.Name;
+            existUser.FirstName = userResource.FirstName;
+            return existUser.FirstName;
         }
         return "No find";
     }
     public string Delete(UserResource userResource)
     {
-        var book = Users.Find(x => x.Id == userResource.Id);
-        if (book != null)
+        var article = Users.Find(x => x.Id == userResource.Id);
+        if (article != null)
         {
-            Users.Remove(book);
+            Users.Remove(article);
             return "Well deleted";
         }
         return "No existing";

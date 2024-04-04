@@ -11,7 +11,7 @@ using Sukuna.DataAccess;
 
 namespace Sukuna.DataAccess.Migrations
 {
-    [DbContext(typeof(BookDbContext))]
+    [DbContext(typeof(ArticleDbContext))]
     [Migration("20231117104605_NewDataBase")]
     partial class NewDataBase
     {
@@ -25,7 +25,7 @@ namespace Sukuna.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Sukuna.Common.Models.Book", b =>
+            modelBuilder.Entity("Sukuna.Common.Models.Article", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -42,7 +42,7 @@ namespace Sukuna.DataAccess.Migrations
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Designation")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Type")
@@ -56,7 +56,7 @@ namespace Sukuna.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Books");
+                    b.ToTable("Articles");
                 });
 
             modelBuilder.Entity("Sukuna.Common.Models.Role", b =>
@@ -73,7 +73,7 @@ namespace Sukuna.DataAccess.Migrations
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Designation")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Type")

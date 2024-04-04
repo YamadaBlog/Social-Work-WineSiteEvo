@@ -1,17 +1,17 @@
 ﻿using Sukuna.Common.Models;
-using Sukuna.Common.Resources.Book;
+using Sukuna.Common.Resources.Article;
 
 namespace Sukuna.Business;
 
 // Besoin de boook resources from common bcs it takes the the parameters reuse in serive 
 
-public interface IBookService
+public interface IArticleService
 {
-    public string Add(BookResource bookResource);
-    public string Update(BookResource bookResource);
-    public string Delete(BookResource bookResource);
-    public Book Get(int id);
-    public string Create(BookResource bookResource);
+    public string Add(ArticleResource articleResource);
+    public string Update(ArticleResource articleResource);
+    public string Delete(ArticleResource articleResource);
+    public Article Get(int id);
+    public string Create(ArticleResource articleResource);
 
-    public List<Book> GetAll();   
+    public List<Article> GetAll();   
 }

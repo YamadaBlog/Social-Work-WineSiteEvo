@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Service\\Sukuna.Service.csproj": {}
+    "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Service\\Sukuna.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Business\\Sukuna.Business.csproj": {
+    "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\Sukuna.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Business\\Sukuna.Business.csproj",
+        "projectUniqueName": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\Sukuna.Business.csproj",
         "projectName": "Sukuna.Business",
-        "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Business\\Sukuna.Business.csproj",
+        "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\Sukuna.Business.csproj",
         "packagesPath": "C:\\Users\\loicm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Business\\obj\\",
+        "outputPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -27,14 +27,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj": {
-                "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj"
+              "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj": {
+                "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj"
               }
             }
           }
@@ -59,23 +59,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj": {
+    "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj",
+        "projectUniqueName": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj",
         "projectName": "Sukuna.DataAccess",
-        "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj",
+        "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj",
         "packagesPath": "C:\\Users\\loicm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.DataAccess\\obj\\",
+        "outputPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,14 +105,14 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj": {
-                "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj"
+              "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj": {
+                "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj"
               }
             }
           }
@@ -145,23 +159,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj": {
+    "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj",
+        "projectUniqueName": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj",
         "projectName": "Sukuna.Common",
-        "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj",
+        "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj",
         "packagesPath": "C:\\Users\\loicm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\obj\\",
+        "outputPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -177,7 +205,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -205,23 +233,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Service\\Sukuna.Service.csproj": {
+    "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Service\\Sukuna.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Service\\Sukuna.Service.csproj",
+        "projectUniqueName": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Service\\Sukuna.Service.csproj",
         "projectName": "Sukuna.Service",
-        "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Service\\Sukuna.Service.csproj",
+        "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Service\\Sukuna.Service.csproj",
         "packagesPath": "C:\\Users\\loicm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Service\\obj\\",
+        "outputPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -237,20 +279,20 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "http://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Business\\Sukuna.Business.csproj": {
-                "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Business\\Sukuna.Business.csproj"
+              "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\Sukuna.Business.csproj": {
+                "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\Sukuna.Business.csproj"
               },
-              "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj"
+              "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj": {
+                "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.DataAccess\\Sukuna.DataAccess.csproj"
               },
-              "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj": {
-                "projectPath": "C:\\Users\\loicm\\dev\\Sukuna\\Sukuna.Entity\\Sukuna.Common.csproj"
+              "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj": {
+                "projectPath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Entity\\Sukuna.Common.csproj"
               }
             }
           }
@@ -275,12 +317,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

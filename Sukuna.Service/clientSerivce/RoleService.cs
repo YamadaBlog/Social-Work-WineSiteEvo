@@ -11,9 +11,9 @@ public class RoleService : IRoleService
     {
         Roles = new List<Role>()
         {
-            new Role() { Type="hello", Title="book1"},
-            new Role() { Type="hello", Title="book2"},
-            new Role() { Type="hello", Title="book3"},
+            new Role() { Type="hello", Designation="article1"},
+            new Role() { Type="hello", Designation="article2"},
+            new Role() { Type="hello", Designation="article3"},
         };
 
     }
@@ -22,13 +22,13 @@ public class RoleService : IRoleService
         var existRole = Roles.Find(x => x.Type == roleResource.Type);
         if (existRole == null)
         {
-            var book = new Role()
+            var article = new Role()
             {
                 Type = roleResource.Type,
-                Title = roleResource.Title
+                Designation = roleResource.Designation
             };
-            Roles.Add(book);
-            return book.Title;
+            Roles.Add(article);
+            return article.Designation;
         }
         return "Already exist";
     }
@@ -43,17 +43,17 @@ public class RoleService : IRoleService
         var existRole = Roles.Find(x => x.Type == roleResource.Type);
         if (existRole != null)
         {
-            existRole.Title = roleResource.Type;
-            return existRole.Title;
+            existRole.Designation = roleResource.Type;
+            return existRole.Designation;
         }
         return "No find";
     }
     public string Delete(RoleResource roleResource)
     {
-        var book = Roles.Find(x => x.Type == roleResource.Type);
-        if (book != null)
+        var article = Roles.Find(x => x.Type == roleResource.Type);
+        if (article != null)
         {
-            Roles.Remove(book);
+            Roles.Remove(article);
             return "Well deleted";
         }
         return "No existing";
