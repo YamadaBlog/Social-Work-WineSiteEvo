@@ -2,52 +2,43 @@
 using Sukuna.Common.Models;
 using Sukuna.Common.Resources.User;
 
-namespace Sukuna.Service.userService;
+namespace Sukuna.Service.clientService;
 
-public class UserService : IUserService
+public class ClientService
 {
-    public List<User> Users { get; set; }
-    public UserService()
+    public List<Client> Users { get; set; }
+    public ClientService()
     {
-        Users = new List<User>()
+        Users = new List<Client>()
         {
-            new User() { Nom="cfd", MotDePasseHashe="article1"},
-            new User() { Nom ="cfd", MotDePasseHashe="article2"},
-            new User() { Nom ="cfd", MotDePasseHashe="article3"},
+            new Client() { ID=1, Nom="article1"},
+            new Client() { ID=2, Nom="article2"},
+            new Client() { ID=3, Nom="article3"},
         };
+
     }
     public string Add(UserResource userResource) // Les ressources sont les saisies utilisateurs
     {
         var existUser = Users.Find(x => x.ID == userResource.ID);
         if (existUser == null)
         {
-            var user = new User()
+            var article = new Client()
             {
                 ID = userResource.ID,
                 Nom = userResource.Nom
             };
-
-            Users.Add(user);
-            return user.Nom;
+            Users.Add(article);
+            return article.Nom;
         }
         return "Already exist";
     }
-    public User Get(int id)
+    public Client Get(int ID)
     {
-        var existUser = Users.Find(x => x.ID == id);
+        var existUser = Users.Find(x => x.ID == ID);
         if (existUser != null) return existUser;
         return null;
     }
-    public string Update(UserResource userResource)
-    {
-        var existUser = Users.Find(x => x.ID == userResource.ID);
-        if (existUser != null)
-        {
-            existUser.Nom = userResource.Nom;
-            return existUser.Nom;
-        }
-        return "No find";
-    }
+
     public string Delete(UserResource userResource)
     {
         var article = Users.Find(x => x.ID == userResource.ID);
@@ -58,7 +49,7 @@ public class UserService : IUserService
         }
         return "No existing";
     }
-    public List<User> GetAll()
+    public List<Client> GetAll()
     {
         return Users;
     }

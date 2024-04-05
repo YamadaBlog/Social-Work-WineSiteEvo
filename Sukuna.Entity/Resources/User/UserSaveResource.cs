@@ -1,19 +1,15 @@
-﻿using Sukuna.Common.Resources.Role;
+﻿using Sukuna.Common.Resources.User;
 
 namespace Sukuna.Common.Resources.User;
 
 public class UserSaveResource
 {
-    public string Name { get; set; }
-
-    public string FirstName { get; set; }
-    public string Password { get; set; }
+    public int ID { get; set; }
+    public string Nom { get; set; }
+    public string Prénom { get; set; }
     public string Email { get; set; }
+    public string MotDePasseHashé { get; set; }
+    public string Rôle { get; set; }
 
-    public List<RoleResource> Roles;
-
-    public UserSaveResource()
-    {
-        Roles = new List<RoleResource>();
-    }
+    public UserSaveResource() { }
 }

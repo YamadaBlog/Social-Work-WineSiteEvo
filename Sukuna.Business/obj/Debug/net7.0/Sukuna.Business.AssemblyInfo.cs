@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sukuna.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a42a1d41393c71c6fae3f6cb83c628d943eba903")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fa6edf1ae2e2360766f721fef581c1c15bb1963")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sukuna.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sukuna.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

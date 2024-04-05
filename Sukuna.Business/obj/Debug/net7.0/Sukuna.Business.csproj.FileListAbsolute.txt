@@ -39,8 +39,8 @@ C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Busi
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Business.AssemblyInfo.cs
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Business.csproj.CoreCompileInputs.cache
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Business.sourcelink.json
-C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Business.csproj.CopyComplete
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Business.dll
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\refint\Sukuna.Business.dll
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.Business.pdb
 C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\ref\Sukuna.Business.dll
+C:\loicm\dev\WineWeb.API\Sukuna.API\Sukuna.Business\obj\Debug\net7.0\Sukuna.B.242DCE83.Up2Date

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DlKU6q1egEwbTyVnZ+uNlF3k9iJrJXkbV2RQLQoZiDd/xQmRAbXWdbY00hf6hh5taOXmtVcp38qMbBK3TaksHQ==",
+  "dgSpecHash": "Eu/ejj9eObFzxfIZEOXvtnGMVgrPD1eBg5L1nnKPQFHljetqRgphTinSkSE/nbDU+OquePgVF8yutL+M2BvOrg==",
   "success": true,
   "projectFilePath": "C:\\loicm\\dev\\WineWeb.API\\Sukuna.API\\Sukuna.Business\\Sukuna.Business.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\loicm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\loicm\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.17\\microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "C:\\Users\\loicm\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.17\\microsoft.windowsdesktop.app.ref.7.0.17.nupkg.sha512",
     "C:\\Users\\loicm\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.17\\microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": [
@@ -13,7 +13,7 @@
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Vous exécutez l’opération 'restore' avec une source « HTTP », 'http://api.nuget.org/v3/index.json'. L’accès non-HTTPS sera supprimé dans une future version. Envisagez de migrer vers une source « HTTPS »."
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://api.nuget.org/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

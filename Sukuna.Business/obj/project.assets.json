@@ -69,6 +69,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -113,7 +118,7 @@
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Vous exécutez l’opération 'restore' avec une source « HTTP », 'http://api.nuget.org/v3/index.json'. L’accès non-HTTPS sera supprimé dans une future version. Envisagez de migrer vers une source « HTTPS »."
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://api.nuget.org/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

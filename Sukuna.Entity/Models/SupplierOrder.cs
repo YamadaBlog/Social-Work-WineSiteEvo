@@ -1,23 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Sukuna.Common.Models
 {
-    public class SupplierOrder : Entity
+    public class SupplierOrder
     {
-        public DateOnly Date {  get; set; }
-        public String State { get; set; }
-        public int NumberArticle { get; set; }
-        public int TotalHT {  get; set; }
-        public int TotalTTC { get; set; }
-        public int InvoiceNumber { get; set; } // Numéro de facture
-        public bool Send { get; set; }
-        public DateOnly SendOn { get; set; }
-        public Supplier Supplier { get; set; }
+        [Key]
+        public int ID { get; set; }
+        [ForeignKey("User")]
+        public int UserID { get; set; }
         public User User { get; set; }
-        public SupplierOrder() { }
+        [ForeignKey("Supplier")]
+        public int SupplierID { get; set; }  // Clé étrangère vers le fournisseur
+        public Supplier Supplier { get; set; }
+        public DateTime DateCommande { get; set; }
+        public string StatutCommande { get; set; }
+        public ICollection<OrderLine> OrderLines { get; set; } // Relation une commande a plusieurs lignes de commande
     }
 }

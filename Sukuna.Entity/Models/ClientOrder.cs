@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Sukuna.Common.Models
 {
-    public class ClientOrder : Entity
+    public class ClientOrder
     {
-        public DateOnly Date { get; set; } // Date de la commande
-        public String State { get; set; } // État actuel de la command
-        public int NumberArticle { get; set; } // Nombre d'articles dans la commande 
-        public int TotalHT { get; set; } // Total hors taxes de la commande
-        public int TotalTTC { get; set; } // Total toutes taxes comprises de la commande
-        public int InvoiceNumber { get; set; } // Numéro de la facture
-        public bool Send { get; set; } // Envoyer true or false
-        public DateOnly SendOn { get; set; } // Date d'envoi de la commande
-        public User CancelledBy { get; set; } // L'employé qui annule la commande 
-        public Client Client { get; set; } // L'id du Client lié à la commande
-        public ClientOrder() { }
+        [Key]
+        public int ID { get; set; }
+        [ForeignKey("Client")]
+        public int ClientID { get; set; }
+        public Client Client { get; set; }
+        public DateTime DateCommande { get; set; }
+        public string StatutCommande { get; set; }
+        public ICollection<OrderLine> OrderLines { get; set; } // Relation une commande a plusieurs lignes de commande
     }
+
 }

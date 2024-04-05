@@ -1,16 +1,16 @@
-﻿namespace Sukuna.Common.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class Client : Entity
+namespace Sukuna.Common.Models
 {
-    public string LastName { get; set; } // Ce champ stocke le nom de famille du client.
 
-    public string FirstName { get; set; } // Ce champ stocke le prénom du client.
-    public string Password { get; set; } // Password du Client
-    public string Email { get; set; } // Ce champ stocke l'adresse e-mail du client.
-    public string Address { get; set; } // Ce champ sotck l'adresse de facturation, livraision et du bénificiaire
-
-    public List<ClientOrder> ClientOrders { get; set; }
-    public Client() 
+    public class Client
     {
+        [Key]
+        public int ID { get; set; }
+        public string Nom { get; set; }
+        public string Prenom { get; set; }
+        public string Adresse { get; set; }
+        public string Email { get; set; }
+        public ICollection<ClientOrder> ClientOrders { get; set; } // Relation un client a plusieurs commandes
     }
 }

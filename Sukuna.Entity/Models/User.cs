@@ -1,18 +1,16 @@
-﻿namespace Sukuna.Common.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class User : Entity
+namespace Sukuna.Common.Models;
+
+public class User
 {
-    public string LastName { get; set; }
-
-    public string FirstName { get; set; }
-    public string Password { get; set; }
+    [Key]
+    public int ID { get; set; }
+    public string Nom { get; set; }
+    public string Prenom { get; set; }
     public string Email { get; set; }
-    public string Address { get; set; }
-    public bool IsAdmin { get; set; }
+    public string MotDePasseHashe { get; set; }
+    public string Role { get; set; }
+    public ICollection<SupplierOrder> SupplierOrders { get; set; } // Relation un client a plusieurs commandes
 
-    public List<SupplierOrder> SupplierOrders { get; set; }
-
-    public User()
-    {
-    }
 }

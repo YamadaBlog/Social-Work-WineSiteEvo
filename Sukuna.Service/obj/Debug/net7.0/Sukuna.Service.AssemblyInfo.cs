@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sukuna.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ac5d2941353450c145ef03f493939b71815894c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fa6edf1ae2e2360766f721fef581c1c15bb1963")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sukuna.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sukuna.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
